@@ -26,9 +26,9 @@ int main()
 	int remain[3];
 	if (result > 0)
 	{
-		remain[2] = result%360;
+		remain[2] = result/360;
 		result -= remain[2]*360;
-		remain[1] = result%30;
+		remain[1] = result/30;
 		result -= remain[1]*30;
 		remain[0] = result;
 		printf("%d %d %d", remain[0], remain[1], remain[2]);
