@@ -20,9 +20,8 @@ int main()
 		prime[max+1] = find;
 		max++;
 	}
-	if (find != prime[max])
+	if (target != prime[max])
 	{
-		max++;
 		loop:
 			find++;
 		j = max;
@@ -34,16 +33,13 @@ int main()
 			}
 			j--;
 		}
-		prime[max+1] = find;
-		max++;
-		goto breaking;
+		prime[max] = find;
+		printf("%d %d", prime[max-1], prime[max]);
+		return 0;
 	}
 	else
 	{
 		printf("%d", find);
 		return 0;
 	}
-	breaking:
-	printf("%d %d", prime[max-2], prime[max-1]);
-	return 0;
 }
