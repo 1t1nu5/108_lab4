@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main()
 {
-	int prime[50000] = {}, target, i = 0, j, find;
+	int prime[50000] = {}, target, max = 0, j, find = 3;
 	prime[0] = 2;
-	while (i < target && i < 50000)
+	while (find < target && find <= 100000)
 	{
 		j = i;
 		while ()
