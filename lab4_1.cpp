@@ -20,6 +20,7 @@ int main()
 	iexp[0] = 10*cexp[0]+cexp[1];
 	iexp[1] = 10*cexp[2]+cexp[3];
 	iexp[2] = 10*cexp[4]+cexp[5];
-	
+	imfg[3] = imfg[0]+30*imfg[1]+360*imfg[2];
+	iexp[3] = iexp[0]+30*iexp[1]+360*iexp[2];
 	return 0;
 }
