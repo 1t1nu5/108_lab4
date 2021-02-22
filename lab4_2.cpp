@@ -17,7 +17,7 @@ int main()
 			j--;
 		}
 		printf("%d\n", find); //test
-		prime[max] = find;
+		prime[max+1] = find;
 		max++;
 	}
 	return 0;
