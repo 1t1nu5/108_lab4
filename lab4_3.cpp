@@ -18,6 +18,10 @@ int main()
 			{
 				continue;
 			}
+			if (i == cont-1 && j == cont-1)
+			{
+				continue;
+			}
 			scanf("%d ", &receive);
 			if (receive >= 1 && receive <= 5)
 			{
