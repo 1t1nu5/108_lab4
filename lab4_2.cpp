@@ -7,12 +7,18 @@ int main()
 	{
 		next:
 			find++;
-		j = i;
+		j = max;
 		while (j >= 0)
 		{
-			
+			if (find%prime[j] == 0)
+			{
+				goto next;
+			}
 			j--;
 		}
+		prinf("%d\n", find);
+		prime[max] = find;
+		max++;
 	}
 	return 0;
 }
