@@ -4,6 +4,11 @@ int main()
 	int prime[50000] = {}, target, max = 0, j, find = 2;
 	prime[0] = 2;
 	scanf("%d", &target);
+	if (target == 1)
+	{
+		printf("2");
+		return 0;
+	}
 	while (find < target && find <= 100050)
 	{
 		next:
@@ -22,11 +27,9 @@ int main()
 	}
 	if (target != prime[max])
 	{
-		goto skip;
 		loop:
 			find++;
 		j = max;
-		skip:
 		while (j >= 0)
 		{
 			if (find%prime[j] == 0)
