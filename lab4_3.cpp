@@ -3,9 +3,15 @@ int main()
 {
 	int cont;
 	scanf("%d", &cont);
-	int score[cont], receive;
+	int score[cont] = {}, receive;
+	int temp[cont];
+	bool f = false;
 	for (int i = 0; i < cont; i++)
 	{
+		for (int k = 0; k < cont; k++)
+		{
+			temp[k] = 0;
+		}
 		for (int j = 0; j < cont; j++)
 		{
 			if (j == i)
@@ -15,11 +21,18 @@ int main()
 			scanf("%d ", &receive);
 			if (receive >= 1 && receive <= 5)
 			{
-				score[j] = receive;
+				temp[j] += receive;
 			}
 			else
 			{
-				score[i] = -5*cont;
+				f = true;
+			}
+		}
+		if (f == false)
+		{
+			for (int j = 0; j < cont; j++)
+			{
+				score[j] += temp[j];
 			}
 		}
 	}
