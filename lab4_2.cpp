@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int prime[50000] = {}, target, max = 0, j, find = 2;
+	int prime[50000] = {}, target = 100000, max = 0, j, find = 2;
 	prime[0] = 2;
 	while (find < target && find <= 100000)
 	{
@@ -16,7 +16,7 @@ int main()
 			}
 			j--;
 		}
-		prinf("%d\n", find); //test
+		printf("%d\n", find); //test
 		prime[max] = find;
 		max++;
 	}
