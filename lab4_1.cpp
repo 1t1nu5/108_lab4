@@ -26,6 +26,11 @@ int main()
 	int remain[3];
 	if (result > 0)
 	{
+		remain[2] = result%360;
+		remain -= remain[2]*360;
+		remain[1] = result%30;
+		remain -= remain[1]*30;
+		remain[0] = result;
 		
 	}
 	else
