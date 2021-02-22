@@ -22,6 +22,7 @@ int main()
 	}
 	if (find != prime[max])
 	{
+		max++;
 		loop:
 			find++;
 		j = max;
@@ -43,6 +44,6 @@ int main()
 		return 0;
 	}
 	breaking:
-	printf("%d %d", prime[max-1], prime[max]);
+	printf("%d %d", prime[max-2], prime[max-1]);
 	return 0;
 }
