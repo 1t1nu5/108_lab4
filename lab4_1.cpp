@@ -27,11 +27,11 @@ int main()
 	if (result > 0)
 	{
 		remain[2] = result%360;
-		remain -= remain[2]*360;
+		result -= remain[2]*360;
 		remain[1] = result%30;
-		remain -= remain[1]*30;
+		result -= remain[1]*30;
 		remain[0] = result;
-		
+		printf("%d %d %d", remain[0], remain[1], remain[2]);
 	}
 	else
 	{
