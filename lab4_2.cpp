@@ -22,9 +22,11 @@ int main()
 	}
 	if (target != prime[max])
 	{
+		goto skip;
 		loop:
 			find++;
 		j = max;
+		skip:
 		while (j >= 0)
 		{
 			if (find%prime[j] == 0)
