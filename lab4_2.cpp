@@ -17,7 +17,6 @@ int main()
 			}
 			j--;
 		}
-		printf("%d\n", find);
 		prime[max+1] = find;
 		max++;
 	}
@@ -34,10 +33,13 @@ int main()
 			}
 			j--;
 		}
-		printf("%d\n", find);
 		prime[max+1] = find;
 		max++;
 		goto breaking;
+	}
+	else
+	{
+		printf("%d", find);
 	}
 	breaking:
 	return 0;
