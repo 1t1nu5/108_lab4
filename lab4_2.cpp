@@ -4,7 +4,7 @@ int main()
 	int prime[50000] = {}, target, max = 0, j, find = 2;
 	prime[0] = 2;
 	scanf("%d", &target);
-	if (target == 1 || target == 0)
+	if (target == 1)
 	{
 		printf("2");
 		return 0;
