@@ -14,5 +14,9 @@ int main()
 	{
 		cexp[i] -= '0';
 	}
+	imfg[0] = 10*cmfg[0]+cmfg[1];
+	imfg[1] = 10*cmfg[2]+cmfg[3];
+	imfg[2] = 10*cmfg[4]+cmfg[5];
+	printf("%d %d %d", imfg[0], imfg[1], imfg[2]);
 	return 0;
 }
