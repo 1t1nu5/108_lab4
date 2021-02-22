@@ -40,7 +40,9 @@ int main()
 	else
 	{
 		printf("%d", find);
+		return 0;
 	}
 	breaking:
+	printf("%d %d", prime[max-1], prime[max]);
 	return 0;
 }
