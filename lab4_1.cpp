@@ -22,7 +22,8 @@ int main()
 	iexp[2] = 10*cexp[4]+cexp[5];
 	imfg[3] = imfg[0]+30*imfg[1]+360*imfg[2];
 	iexp[3] = iexp[0]+30*iexp[1]+360*iexp[2];
-	if (iexp[3] - imfg[3] > 0)
+	int result = iexp[3] - imfg[3];
+	if (result > 0)
 	{
 		
 	}
