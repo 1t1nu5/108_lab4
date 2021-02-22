@@ -23,6 +23,7 @@ int main()
 	imfg[3] = imfg[0]+30*imfg[1]+360*imfg[2];
 	iexp[3] = iexp[0]+30*iexp[1]+360*iexp[2];
 	int result = iexp[3] - imfg[3];
+	int remain[3];
 	if (result > 0)
 	{
 		
