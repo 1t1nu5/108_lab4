@@ -3,7 +3,7 @@
 int main()
 {
 	char cmfg[7], cexp[7];
-	int imfg[3], iexp[3];
+	int imfg[4], iexp[4];
 	scanf("%s", cmfg);
 	scanf("%s", cexp);
 	for (int i = 0; i < 6; i++)
@@ -20,5 +20,6 @@ int main()
 	iexp[0] = 10*cexp[0]+cexp[1];
 	iexp[1] = 10*cexp[2]+cexp[3];
 	iexp[2] = 10*cexp[4]+cexp[5];
+	
 	return 0;
 }
