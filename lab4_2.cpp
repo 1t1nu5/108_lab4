@@ -16,7 +16,7 @@ int main()
 			}
 			j--;
 		}
-		prinf("%d\n", find);
+		prinf("%d\n", find); //test
 		prime[max] = find;
 		max++;
 	}
