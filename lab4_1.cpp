@@ -2,8 +2,9 @@
 #include <string.h>
 int main()
 {
-	char msg[7], exp[7];
-	scanf("%s", msg);
-	scanf("%s", exp);
+	char cmfg[7], cexp[7];
+	int imfg[3], iexp[3];
+	scanf("%s", cmfg);
+	scanf("%s", cexp);
 	return 0;
 }
